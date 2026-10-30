@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-10-30T08:36:30.343Z",
+  "url": "local built UI",
+  "observations": [
+    {
+      "width": 1440,
+      "action": "Create a research basket",
+      "hash": "#new-basket",
+      "destination_visible": true
+    },
+    {
+      "width": 1440,
+      "action": "Source library",
+      "hash": "#source-library",
+      "destination_visible": true
+    },
+    {
+      "width": 1440,
+      "action": "Workspace",
+      "hash": "#workspace",
+      "destination_visible": true
+    },
+    {
+      "width": 1440,
+      "action": "New basket",
+      "hash": "#new-basket",
+      "destination_visible": true
+    },
+    {
+      "width": 1440,
+      "action": "Open an existing basket",
+      "hash": "#workspace",
+      "destination_visible": true
+    },
+    {
+      "width": 390,
+      "action": "Create a research basket",
+      "hash": "#new-basket",
+      "destination_visible": true
+    },
+    {
+      "width": 390,
+      "action": "Source library",
+      "hash": "#source-library",
+      "destination_visible": true
+    },
+    {
+      "width": 390,
+      "action": "Workspace",
+      "hash": "#workspace",
+      "destination_visible": true
+    },
+    {
+      "width": 390,
+      "action": "New basket",
+      "hash": "#new-basket",
+      "destination_visible": true
+    },
+    {
+      "width": 390,
+      "action": "Open an existing basket",
+      "hash": "#workspace",
+      "destination_visible": true
+    }
+  ]
+}
