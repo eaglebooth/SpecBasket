@@ -1,0 +1,11 @@
+{
+  "chain_id": 61999,
+  "address": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+  "version": "0.2.0",
+  "source_sha256": "97af2093a0273c494ba0bebfb1a878bbacc616fbcddd5a8019959d73f6223dc1",
+  "deployed_by": "user main wallet",
+  "live_status": "sdk_and_ui_readback_verified",
+  "role": "current_candidate",
+  "browser_wallet_signing": "deferred_by_user",
+  "positive_failed_deposit_recovery": "controlled_only"
+}

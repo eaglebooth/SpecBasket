@@ -1,0 +1,37 @@
+{
+  "name": "specbasket",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test:ui": "node --test tests/client.test.mjs",
+    "verify": "python scripts/verify.py",
+    "test:browser": "node scripts/check-ui.mjs",
+    "preflight": "node scripts/live.mjs preflight",
+    "test:live": "node scripts/live.mjs lifecycle",
+    "test:negative": "node scripts/live.mjs negative",
+    "test:audit": "node scripts/live.mjs audit",
+    "check:delivery": "node scripts/live.mjs delivery",
+    "test:recovery": "node scripts/live.mjs recovery",
+    "test:race": "node scripts/live.mjs race",
+    "test:recovery-negative": "node scripts/live.mjs recovery-negative"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "5.3.0",
+    "@fontsource/libre-caslon-display": "5.3.0",
+    "genlayer-js": "1.1.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "puppeteer-core": "25.16.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  }
+}

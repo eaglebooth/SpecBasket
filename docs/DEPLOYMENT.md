@@ -1,0 +1,20 @@
+# Production deployment
+
+Website: https://specbasket.vercel.app
+GitHub: https://github.com/eaglebooth/SpecBasket
+Vercel deployment: dpl_47R9AhkfhGMio4iBY2X99cBkwSh7 (READY, production).
+Contract: [0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9](https://explorer-studio.genlayer.com/address/0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9).
+
+[Production browser evidence](live-evidence/UI_PRODUCTION_READBACK.json) was collected
+against the hosted domain using real RPC: release source parity, actual basket title,
+TRANSFERS EMITTED, three requirements, two supported/four unsupported cells, exact
+award/refund outbox, and both parent-bound credited native children. No JS errors or
+mobile horizontal overflow observed. The supplied logo is included in the frontend.
+
+[Desktop screenshot](live-evidence/ui-production-desktop.png) ·
+[Mobile screenshot](live-evidence/ui-production-mobile.png).
+
+This is read-only browser verification, not browser wallet signing; signing was deferred
+by the user. SDK transactions and delivery evidence remain in [live E2E](LIVE_E2E_EVIDENCE.md).
+Positive eligible failed-deposit recovery remains controlled-only. Deployment does not
+change the contract or remove these limits. No private keys are uploaded to Vercel.

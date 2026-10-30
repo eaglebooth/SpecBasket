@@ -1,0 +1,166 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "assess_source": {
+      "params": [
+        [
+          "basket_id",
+          "string"
+        ],
+        [
+          "manifest_digest",
+          "string"
+        ],
+        [
+          "nomination_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "cancel": {
+      "params": [
+        [
+          "basket_id",
+          "string"
+        ],
+        [
+          "policy_digest",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "create_basket": {
+      "params": [
+        [
+          "slug",
+          "string"
+        ],
+        [
+          "title",
+          "string"
+        ],
+        [
+          "requirements_json",
+          "string"
+        ],
+        [
+          "contributors_json",
+          "string"
+        ],
+        [
+          "reward_wei",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "freeze": {
+      "params": [
+        [
+          "basket_id",
+          "string"
+        ],
+        [
+          "expected_revision",
+          "int"
+        ],
+        [
+          "selected_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "fund_and_publish": {
+      "params": [
+        [
+          "basket_id",
+          "string"
+        ],
+        [
+          "assessment_digest",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": true
+    },
+    "get_basket": {
+      "params": [
+        [
+          "basket_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_native_balance": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_nomination": {
+      "params": [
+        [
+          "nomination_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_version": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "nominate": {
+      "params": [
+        [
+          "basket_id",
+          "string"
+        ],
+        [
+          "policy_digest",
+          "string"
+        ],
+        [
+          "erc",
+          "string"
+        ],
+        [
+          "note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    }
+  }
+}

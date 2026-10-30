@@ -1,0 +1,54 @@
+{
+  "repository": "ethereum/ERCs",
+  "commit": "f6d27455054efe82455fc021f2a3570441b88ea7",
+  "resources": [
+    {
+      "erc": 1155,
+      "repository": "ethereum/ERCs",
+      "commit": "f6d27455054efe82455fc021f2a3570441b88ea7",
+      "path": "ERCS/erc-1155.md",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/f6d27455054efe82455fc021f2a3570441b88ea7/ERCS/erc-1155.md",
+      "sha256": "beac04fc902314ec0d60000e3bcb73cb7080d586f6a718b6b35a6d68a8ac98b1",
+      "bytes": 56174,
+      "authority": "Ethereum ERC publication repository",
+      "claim_scope": "Exact published specification text only; not deployed implementation or payment enforcement",
+      "checked_at": "2026-10-29T02:23:41.220047+00:00"
+    },
+    {
+      "erc": 2981,
+      "repository": "ethereum/ERCs",
+      "commit": "f6d27455054efe82455fc021f2a3570441b88ea7",
+      "path": "ERCS/erc-2981.md",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/f6d27455054efe82455fc021f2a3570441b88ea7/ERCS/erc-2981.md",
+      "sha256": "7f9c7d2ac9245fbcdbd1058eb69e41fa1e8bdf4873e06c71e97c977be40681c3",
+      "bytes": 15197,
+      "authority": "Ethereum ERC publication repository",
+      "claim_scope": "Exact published specification text only; not deployed implementation or payment enforcement",
+      "checked_at": "2026-10-29T02:23:41.743747+00:00"
+    },
+    {
+      "erc": 721,
+      "repository": "ethereum/ERCs",
+      "commit": "f6d27455054efe82455fc021f2a3570441b88ea7",
+      "path": "ERCS/erc-721.md",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/f6d27455054efe82455fc021f2a3570441b88ea7/ERCS/erc-721.md",
+      "sha256": "238787165c08ac748928ffad57a24045802174bb38220af9e7b63c44778b7372",
+      "bytes": 30325,
+      "authority": "Ethereum ERC publication repository",
+      "claim_scope": "Exact published specification text only; not deployed implementation or payment enforcement",
+      "checked_at": "2026-10-29T02:23:42.659319+00:00"
+    },
+    {
+      "erc": 20,
+      "repository": "ethereum/ERCs",
+      "commit": "f6d27455054efe82455fc021f2a3570441b88ea7",
+      "path": "ERCS/erc-20.md",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/f6d27455054efe82455fc021f2a3570441b88ea7/ERCS/erc-20.md",
+      "sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+      "bytes": 5601,
+      "authority": "Ethereum ERC publication repository",
+      "claim_scope": "Exact published specification text only; not deployed implementation or payment enforcement",
+      "checked_at": "2026-10-29T02:23:43.176605+00:00"
+    }
+  ]
+}

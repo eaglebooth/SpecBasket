@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-30T07:44:50.895Z",
+  "scope": "Built local UI only; no wallet signing, mock RPC or deployed state",
+  "desktop": {
+    "title": "SpecBasket — Standards, substantiated.",
+    "overflow": false,
+    "logo": 1254,
+    "noDeployment": false
+  },
+  "create": {
+    "fields": 4,
+    "submitDisabled": true
+  },
+  "sources": 4,
+  "mobile": {
+    "overflow": false,
+    "width": 390,
+    "scrollWidth": 390
+  },
+  "missingAddressRejected": true,
+  "errors": []
+}

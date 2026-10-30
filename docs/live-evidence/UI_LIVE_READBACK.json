@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-30T01:49:14.794Z",
+  "address": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+  "basket": "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary",
+  "parent": "0x9cb9da35f8e9c2ae8f6040cd9032ec7ca8588015452f24ce3bb0bdc81d9f744f",
+  "scope": "Built browser read-only real RPC state and native-child verification; no wallet/signing/approval popup journey",
+  "observed": {
+    "title": "NFT standards research",
+    "state": "TRANSFERS EMITTED",
+    "requirements": 3,
+    "supported": 2,
+    "not_supported": 4,
+    "outbox": [
+      "Research award0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f0.0002 GEN",
+      "Unallocated refund0xeb57bc7125fa60d7482ce12058397369ab3581f80.0001 GEN"
+    ],
+    "wallet_connected": false
+  },
+  "childLinks": [
+    "https://explorer-studio.genlayer.com/transactions/0x2378bee3d023940f49f2da9259fd850c3646276ad7fa173883e13d6f1897d388",
+    "https://explorer-studio.genlayer.com/transactions/0x40518cad1ee29a23a80e7d96eedb3a23b73d81c5a7cd96debe1fe3c755e2bd33"
+  ],
+  "mobile_overflow": false,
+  "errors": []
+}

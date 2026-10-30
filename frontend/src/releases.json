@@ -1,0 +1,4 @@
+{
+  "0.1.0": {"policy":"specbasket/official-erc-matching-v1","source_sha256":"59f0ddd00953f858942674f0df1e027575b4558e782845429d54584c4e74cfa2","read_only":true},
+  "0.2.0": {"policy":"specbasket/official-erc-matching-v2","source_sha256":"97af2093a0273c494ba0bebfb1a878bbacc616fbcddd5a8019959d73f6223dc1","read_only":false}
+}

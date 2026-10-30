@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-10-29T08:56:21.342020+00:00",
+  "scope": "Controlled production-entrypoint harness, linter/schema, client helpers and build. Not deployed GenVM, real model consensus, actual money transfer or browser-wallet signing.",
+  "source_sha256": "59f0ddd00953f858942674f0df1e027575b4558e782845429d54584c4e74cfa2",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--tb=short",
+        "-p",
+        "no:cacheprovider",
+        "tests"
+      ],
+      "exit_code": 0,
+      "stdout": ".......................................                                  [100%]\n39 passed in 0.13s\n",
+      "stderr": "WARNING: File `gltest.config.yaml` not found in the current directory, using default config, create a `gltest.config.yaml` file to manage multiple networks\nINFO: Clearing artifacts directory: artifacts\nINFO: Using the following configuration:\nINFO:   RPC URL: http://127.0.0.1:4000/api\nINFO:   Selected Network: localnet\nINFO:   Available networks: ['localnet', 'studionet', 'testnet_asimov', 'testnet_bradbury']\nINFO:   Selected chain type: localnet\nINFO:   Available chains: localnet, studionet, testnet_asimov, testnet_bradbury\nINFO:   Contracts directory: contracts\nINFO:   Artifacts directory: artifacts\nINFO:   Environment: .env\nINFO:   Default wait interval: 3000 ms\nINFO:   Default wait retries: 50\nINFO:   Leader only mode: False\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "genvm_linter.cli",
+        "check",
+        "contracts/spec_basket.py"
+      ],
+      "exit_code": 0,
+      "stdout": "\n\u2713 Lint passed (3 checks)\n\u2713 Validation passed\n  Contract: SpecBasket\n  Methods: 10 (4 view, 6 write)\n  \u2139 py-genlayer: a newer runner is available (1zr6nqk597d97kg0dyxg0shhrykx5v02zjgnyrajapy4wlqvfvwh). See https://github.com/genlayerlabs/genvm/releases for changes.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "genvm_linter.cli",
+        "schema",
+        "contracts/spec_basket.py",
+        "-o",
+        "docs/schema.json"
+      ],
+      "exit_code": 0,
+      "stdout": "\nSchema written to docs/schema.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "scripts/live.mjs"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/client.test.mjs"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2714 SDK hash shapes normalized; malformed objects rejected (3.1174ms)\n\u2714 finalized parent execution failure never becomes success (0.4023ms)\n\u2714 receipt variants require explicit majority and execution success (0.2082ms)\n\u2714 business poststate differs from mere transaction success (0.3859ms)\n\u2714 GEN parsing is integer exact and bounded (0.6314ms)\n\u2714 missing and zero contract addresses rejected (0.3766ms)\n\u2714 retry cannot claim success from a previous unresolved latest-final read (0.2651ms)\n\u2714 corrupted local recent storage does not crash the app (1.4479ms)\n\u2714 dirty contract selector cannot leave old writes enabled (0.278ms)\n\u2714 persisted submitted links survive reload and reject malformed records (0.7194ms)\n\u2714 live resume reuses frozen revision but rejects changed source selection (0.4788ms)\n\u2139 tests 11\n\u2139 suites 0\n\u2139 pass 11\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 158.8409\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "stdout": "\n> specbasket@0.1.0 build\n> tsc --noEmit && vite build\n\nvite v8.3.5 building client environment for production...\ntransforming...\n\u2713 475 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                                                     0.62 kB \u2502 gzip:   0.40 kB\ndist/assets/dm-sans-latin-600-normal-Aqo67rzb.woff2                14.14 kB\ndist/assets/dm-sans-latin-400-normal-CW0RaeGs.woff2                14.20 kB\ndist/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2                14.30 kB\ndist/assets/dm-sans-latin-700-normal-DvUfVpUG.woff2                14.34 kB\ndist/assets/dm-sans-latin-600-normal-BmdmIIQ2.woff                 18.32 kB\ndist/assets/dm-sans-latin-400-normal-BwCSEQnW.woff                 18.35 kB\ndist/assets/dm-sans-latin-700-normal-CUSSCpQX.woff                 18.50 kB\ndist/assets/dm-sans-latin-500-normal-Dr3UlScf.woff                 18.52 kB\ndist/assets/libre-caslon-display-latin-400-normal-BbfEE5V2.woff    20.04 kB\ndist/assets/libre-caslon-display-latin-400-normal-n_DgBRfq.woff2   24.23 kB\ndist/assets/index-T8383J41.css                                     16.89 kB \u2502 gzip:   4.51 kB\ndist/assets/ccip-OAq_fdDP.js                                        2.83 kB \u2502 gzip:   1.30 kB\ndist/assets/index-S4lg9Odb.js                                     747.57 kB \u2502 gzip: 181.15 kB\n\n\u2713 built in 415ms\n",
+      "stderr": "[plugin builtin:vite-reporter] \n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n"
+    }
+  ]
+}

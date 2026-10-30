@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-29T09:43:30.124586+00:00",
+  "address": "0x65Bc42A6263De86C6Aa1D0DE8a6021b630A5656d",
+  "source_sha256": "59f0ddd00953f858942674f0df1e027575b4558e782845429d54584c4e74cfa2",
+  "status": "FINANCIAL_GATE_FAILED",
+  "failed_tx": "0xdfbaf710219042b0be0b5cf3300332eb7afd232fe2de48e66223b68704c41ce5",
+  "attached_wei": "1",
+  "native_before": "0",
+  "native_after": "1",
+  "canonical_state_unchanged": true,
+  "execution": "ERROR",
+  "payload": "EXACT_VALUE_REQUIRED",
+  "finality": "FINALIZED",
+  "consensus": "MAJORITY_AGREE",
+  "value_credited": true,
+  "triggered_transactions": [],
+  "scope": "Native value persisted after rollback; no automatic refund observed. Funding stopped. Source semantic matrix passed; unrelated zero-value tests may continue."
+}

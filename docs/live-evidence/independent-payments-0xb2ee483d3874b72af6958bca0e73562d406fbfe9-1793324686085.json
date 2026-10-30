@@ -1,0 +1,492 @@
+{
+  "checked_at": "2026-10-30T01:44:37.832Z",
+  "address": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+  "chain_id": 61999,
+  "source_sha256": "97af2093a0273c494ba0bebfb1a878bbacc616fbcddd5a8019959d73f6223dc1",
+  "version": {
+    "automatic_expiry": false,
+    "catalog": {
+      "20": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+      "721": "238787165c08ac748928ffad57a24045802174bb38220af9e7b63c44778b7372",
+      "1155": "beac04fc902314ec0d60000e3bcb73cb7080d586f6a718b6b35a6d68a8ac98b1",
+      "2981": "7f9c7d2ac9245fbcdbd1058eb69e41fa1e8bdf4873e06c71e97c977be40681c3"
+    },
+    "failed_deposit_recovery": "official_rpc_known_rollback_sender_bound_once_only",
+    "max_contributors": 3,
+    "max_requirements": 3,
+    "max_selected": 3,
+    "max_source_bytes": 65536,
+    "name": "SpecBasket",
+    "network": 61999,
+    "payment_semantics": "asynchronous_external_messages_not_confirmed_delivery",
+    "policy": "specbasket/official-erc-matching-v2",
+    "positive_rejection": "REJECTED_REFUND_EMITTED_not_publish_success",
+    "source_commit": "f6d27455054efe82455fc021f2a3570441b88ea7",
+    "version": "0.2.0"
+  },
+  "mode": "payments",
+  "parents": [
+    {
+      "label": "core-wrong-value",
+      "hash": "0xd9ef78d14951be51e79e41661f913b478ca8f30a5d026361feaecc0be9dfa634",
+      "execution": {
+        "ok": true,
+        "reason": ""
+      },
+      "intent": {
+        "actor": "0xeb57bc7125fa60d7482CE12058397369AB3581f8",
+        "method": "fund_and_publish",
+        "args": [
+          "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary",
+          "ec6754ba5d0f09dfa45d1a46626dae1d7a5fc0e945cac5850213f93a162e76d6"
+        ],
+        "basketId": "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary",
+        "value": "1",
+        "expectedError": null,
+        "expectedRefund": "EXACT_VALUE_REQUIRED"
+      },
+      "business": {
+        "reason": "EXACT_VALUE_REQUIRED",
+        "refund": {
+          "amount_wei": "1",
+          "delivery_confirmed": false,
+          "deposit_hash": "",
+          "id": "0xeb57bc7125fa60d7482ce12058397369ab3581f8:refund-1",
+          "reason": "EXACT_VALUE_REQUIRED",
+          "recipient": "0xeb57bc7125fa60d7482ce12058397369ab3581f8",
+          "status": "REFUND_EMITTED"
+        },
+        "status": "REJECTED_REFUND_EMITTED"
+      }
+    },
+    {
+      "label": "core-publish",
+      "hash": "0x9cb9da35f8e9c2ae8f6040cd9032ec7ca8588015452f24ce3bb0bdc81d9f744f",
+      "execution": {
+        "ok": true,
+        "reason": ""
+      },
+      "intent": {
+        "actor": "0xeb57bc7125fa60d7482CE12058397369AB3581f8",
+        "method": "fund_and_publish",
+        "args": [
+          "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary",
+          "ec6754ba5d0f09dfa45d1a46626dae1d7a5fc0e945cac5850213f93a162e76d6"
+        ],
+        "basketId": "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary",
+        "value": "300000000000000",
+        "expectedError": null,
+        "expectedRefund": null
+      },
+      "business": {
+        "basket_id": "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary",
+        "status": "TRANSFERS_EMITTED"
+      }
+    }
+  ],
+  "native_transfers": [
+    {
+      "parent_hash": "0xd9ef78d14951be51e79e41661f913b478ca8f30a5d026361feaecc0be9dfa634",
+      "child_hash": "0xcb831ad946b23e5f97746922863e77844834e7d252ba8bc62e7760bd96206355",
+      "recipient": "0xeb57bc7125fa60d7482ce12058397369ab3581f8",
+      "wei": "1",
+      "kind": "REJECTED_VALUE_REFUND",
+      "native_credit_verified": true
+    },
+    {
+      "parent_hash": "0x9cb9da35f8e9c2ae8f6040cd9032ec7ca8588015452f24ce3bb0bdc81d9f744f",
+      "child_hash": "0x2378bee3d023940f49f2da9259fd850c3646276ad7fa173883e13d6f1897d388",
+      "recipient": "0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f",
+      "wei": "200000000000000",
+      "kind": "RESEARCH_AWARD",
+      "native_credit_verified": true
+    },
+    {
+      "parent_hash": "0x9cb9da35f8e9c2ae8f6040cd9032ec7ca8588015452f24ce3bb0bdc81d9f744f",
+      "child_hash": "0x40518cad1ee29a23a80e7d96eedb3a23b73d81c5a7cd96debe1fe3c755e2bd33",
+      "recipient": "0xeb57bc7125fa60d7482ce12058397369ab3581f8",
+      "wei": "100000000000000",
+      "kind": "UNALLOCATED_REFUND",
+      "native_credit_verified": true
+    }
+  ],
+  "raw_native_children": [
+    {
+      "hash": "0xcb831ad946b23e5f97746922863e77844834e7d252ba8bc62e7760bd96206355",
+      "from_address": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+      "to_address": "0xeb57bc7125fa60d7482CE12058397369AB3581f8",
+      "data": {},
+      "value": "1",
+      "type": 0,
+      "status": "FINALIZED",
+      "result": 5,
+      "consensus_data": null,
+      "gaslimit": 0,
+      "nonce": 0,
+      "r": null,
+      "s": null,
+      "v": null,
+      "created_at": "2026-10-30T01:35:41.018793+00:00",
+      "leader_only": false,
+      "execution_mode": "NORMAL",
+      "origin_address": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+      "triggered_by": "0xd9ef78d14951be51e79e41661f913b478ca8f30a5d026361feaecc0be9dfa634",
+      "triggered_on": "finalized",
+      "triggered_transactions": [],
+      "appealed": false,
+      "timestamp_awaiting_finalization": null,
+      "appeal_failed": 0,
+      "appeal_undetermined": false,
+      "consensus_history": {
+        "current_monitoring": {
+          "PENDING": 1793324141.205221
+        },
+        "current_status_changes": [
+          "PENDING",
+          "FINALIZED"
+        ]
+      },
+      "timestamp_appeal": null,
+      "appeal_processing_time": 0,
+      "config_rotation_rounds": null,
+      "num_of_initial_validators": null,
+      "last_vote_timestamp": "None",
+      "rotation_count": 0,
+      "appeal_leader_timeout": false,
+      "leader_timeout_validators": null,
+      "appeal_validators_timeout": false,
+      "sim_config": {
+        "validators": [],
+        "genvm_datetime": null
+      },
+      "value_credited": true,
+      "current_timestamp": "1793324686",
+      "sender": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+      "recipient": "0xeb57bc7125fa60d7482CE12058397369AB3581f8",
+      "tx_slot": "0",
+      "created_timestamp": "1793324141",
+      "random_seed": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "tx_id": "0xcb831ad946b23e5f97746922863e77844834e7d252ba8bc62e7760bd96206355",
+      "read_state_block_range": {
+        "activation_block": "0",
+        "processing_block": "0",
+        "proposal_block": "0"
+      },
+      "activator": "",
+      "last_leader": "",
+      "result_name": "NO_MAJORITY",
+      "tx_data": "",
+      "tx_execution_hash": "",
+      "eq_blocks_outputs": "0xc8c6c28000c0c080c0",
+      "messages": [],
+      "queue_type": "0",
+      "queue_position": "0",
+      "num_of_rounds": "0",
+      "last_round": {
+        "round": "0",
+        "leader_index": "0",
+        "votes_committed": "0",
+        "votes_revealed": "0",
+        "appeal_bond": "0",
+        "rotations_left": "0",
+        "result": 5,
+        "round_validators": [],
+        "validator_votes_hash": [],
+        "validator_votes": [],
+        "validator_votes_name": []
+      }
+    },
+    {
+      "hash": "0x2378bee3d023940f49f2da9259fd850c3646276ad7fa173883e13d6f1897d388",
+      "from_address": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+      "to_address": "0x2da5393d7BBb9A037dc3abB56DbbC5C150fc843f",
+      "data": {},
+      "value": "200000000000000",
+      "type": 0,
+      "status": "FINALIZED",
+      "result": 5,
+      "consensus_data": null,
+      "gaslimit": 1,
+      "nonce": 1,
+      "r": null,
+      "s": null,
+      "v": null,
+      "created_at": "2026-10-30T01:37:10.403986+00:00",
+      "leader_only": false,
+      "execution_mode": "NORMAL",
+      "origin_address": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+      "triggered_by": "0x9cb9da35f8e9c2ae8f6040cd9032ec7ca8588015452f24ce3bb0bdc81d9f744f",
+      "triggered_on": "finalized",
+      "triggered_transactions": [],
+      "appealed": false,
+      "timestamp_awaiting_finalization": null,
+      "appeal_failed": 0,
+      "appeal_undetermined": false,
+      "consensus_history": {
+        "current_monitoring": {
+          "PENDING": 1793324231.2482154
+        },
+        "current_status_changes": [
+          "PENDING",
+          "FINALIZED"
+        ]
+      },
+      "timestamp_appeal": null,
+      "appeal_processing_time": 0,
+      "config_rotation_rounds": null,
+      "num_of_initial_validators": null,
+      "last_vote_timestamp": "None",
+      "rotation_count": 0,
+      "appeal_leader_timeout": false,
+      "leader_timeout_validators": null,
+      "appeal_validators_timeout": false,
+      "sim_config": {
+        "validators": [],
+        "genvm_datetime": null
+      },
+      "value_credited": true,
+      "current_timestamp": "1793324686",
+      "sender": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+      "recipient": "0x2da5393d7BBb9A037dc3abB56DbbC5C150fc843f",
+      "tx_slot": "0",
+      "created_timestamp": "1793324230",
+      "random_seed": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "tx_id": "0x2378bee3d023940f49f2da9259fd850c3646276ad7fa173883e13d6f1897d388",
+      "read_state_block_range": {
+        "activation_block": "0",
+        "processing_block": "0",
+        "proposal_block": "0"
+      },
+      "activator": "",
+      "last_leader": "",
+      "result_name": "NO_MAJORITY",
+      "tx_data": "",
+      "tx_execution_hash": "",
+      "eq_blocks_outputs": "0xc8c6c28000c0c080c0",
+      "messages": [],
+      "queue_type": "0",
+      "queue_position": "0",
+      "num_of_rounds": "0",
+      "last_round": {
+        "round": "0",
+        "leader_index": "0",
+        "votes_committed": "0",
+        "votes_revealed": "0",
+        "appeal_bond": "0",
+        "rotations_left": "0",
+        "result": 5,
+        "round_validators": [],
+        "validator_votes_hash": [],
+        "validator_votes": [],
+        "validator_votes_name": []
+      }
+    },
+    {
+      "hash": "0x40518cad1ee29a23a80e7d96eedb3a23b73d81c5a7cd96debe1fe3c755e2bd33",
+      "from_address": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+      "to_address": "0xeb57bc7125fa60d7482CE12058397369AB3581f8",
+      "data": {},
+      "value": "100000000000000",
+      "type": 0,
+      "status": "FINALIZED",
+      "result": 5,
+      "consensus_data": null,
+      "gaslimit": 2,
+      "nonce": 2,
+      "r": null,
+      "s": null,
+      "v": null,
+      "created_at": "2026-10-30T01:37:10.456478+00:00",
+      "leader_only": false,
+      "execution_mode": "NORMAL",
+      "origin_address": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+      "triggered_by": "0x9cb9da35f8e9c2ae8f6040cd9032ec7ca8588015452f24ce3bb0bdc81d9f744f",
+      "triggered_on": "finalized",
+      "triggered_transactions": [],
+      "appealed": false,
+      "timestamp_awaiting_finalization": null,
+      "appeal_failed": 0,
+      "appeal_undetermined": false,
+      "consensus_history": {
+        "current_monitoring": {
+          "PENDING": 1793324231.3070922
+        },
+        "current_status_changes": [
+          "PENDING",
+          "FINALIZED"
+        ]
+      },
+      "timestamp_appeal": null,
+      "appeal_processing_time": 0,
+      "config_rotation_rounds": null,
+      "num_of_initial_validators": null,
+      "last_vote_timestamp": "None",
+      "rotation_count": 0,
+      "appeal_leader_timeout": false,
+      "leader_timeout_validators": null,
+      "appeal_validators_timeout": false,
+      "sim_config": {
+        "validators": [],
+        "genvm_datetime": null
+      },
+      "value_credited": true,
+      "current_timestamp": "1793324686",
+      "sender": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+      "recipient": "0xeb57bc7125fa60d7482CE12058397369AB3581f8",
+      "tx_slot": "0",
+      "created_timestamp": "1793324230",
+      "random_seed": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "tx_id": "0x40518cad1ee29a23a80e7d96eedb3a23b73d81c5a7cd96debe1fe3c755e2bd33",
+      "read_state_block_range": {
+        "activation_block": "0",
+        "processing_block": "0",
+        "proposal_block": "0"
+      },
+      "activator": "",
+      "last_leader": "",
+      "result_name": "NO_MAJORITY",
+      "tx_data": "",
+      "tx_execution_hash": "",
+      "eq_blocks_outputs": "0xc8c6c28000c0c080c0",
+      "messages": [],
+      "queue_type": "0",
+      "queue_position": "0",
+      "num_of_rounds": "0",
+      "last_round": {
+        "round": "0",
+        "leader_index": "0",
+        "votes_committed": "0",
+        "votes_revealed": "0",
+        "appeal_bond": "0",
+        "rotations_left": "0",
+        "result": 5,
+        "round_validators": [],
+        "validator_votes_hash": [],
+        "validator_votes": [],
+        "validator_votes_name": []
+      }
+    }
+  ],
+  "baskets": {
+    "core": {
+      "allocation": "max_cardinality_then_lexicographic_nomination_id_one_erc_one_award",
+      "assessment_digest": "ec6754ba5d0f09dfa45d1a46626dae1d7a5fc0e945cac5850213f93a162e76d6",
+      "assessments": {
+        "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary:0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f:erc-1155": {
+          "code": "OK",
+          "context_digest": "876ac850e8c993cc00eb77d19ac3a142f4ab54f188500a5391adf5527b55d3c0",
+          "rows": [
+            {
+              "id": "q0",
+              "quote": "A single deployed contract may include any combination of fungible tokens, non-fungible tokens or other configurations (e.g. semi-fungible tokens).",
+              "relation": "SUPPORTED"
+            },
+            {
+              "id": "q1",
+              "quote": "",
+              "relation": "NOT_SUPPORTED"
+            },
+            {
+              "id": "q2",
+              "quote": "",
+              "relation": "NOT_SUPPORTED"
+            }
+          ],
+          "status": "RESOLVED"
+        },
+        "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary:0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f:erc-2981": {
+          "code": "OK",
+          "context_digest": "3b34b01c880dc2c1cb03a36bd5f2d9e16ce9180b97c1eaf7fa5f6dada5a19c79",
+          "rows": [
+            {
+              "id": "q0",
+              "quote": "",
+              "relation": "NOT_SUPPORTED"
+            },
+            {
+              "id": "q1",
+              "quote": "function royaltyInfo(\n        uint256 _tokenId,\n        uint256 _salePrice\n    ) external view returns (\n        address receiver,\n        uint256 royaltyAmount\n    );",
+              "relation": "SUPPORTED"
+            },
+            {
+              "id": "q2",
+              "quote": "The royalty payment must be voluntary",
+              "relation": "NOT_SUPPORTED"
+            }
+          ],
+          "status": "RESOLVED"
+        }
+      },
+      "attempts": {
+        "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary:0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f:erc-1155": 1,
+        "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary:0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f:erc-2981": 2
+      },
+      "catalog": {
+        "20": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+        "721": "238787165c08ac748928ffad57a24045802174bb38220af9e7b63c44778b7372",
+        "1155": "beac04fc902314ec0d60000e3bcb73cb7080d586f6a718b6b35a6d68a8ac98b1",
+        "2981": "7f9c7d2ac9245fbcdbd1058eb69e41fa1e8bdf4873e06c71e97c977be40681c3"
+      },
+      "chain": 61999,
+      "contract": "0xb2ee483d3874b72af6958bca0e73562d406fbfe9",
+      "contributors": [
+        "0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f"
+      ],
+      "emitted_wei": "300000000000000",
+      "funding": "optional_sponsor_funding_after_assessment_no_prior_reward_guarantee",
+      "id": "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary",
+      "manifest_digest": "16c7ce48e6de857375e63b028d6d959df1f390f469fb5ba30850e0aeb5f07fc4",
+      "matching": [
+        0,
+        1,
+        -1
+      ],
+      "nomination_ids": [
+        "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary:0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f:erc-1155",
+        "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary:0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f:erc-2981"
+      ],
+      "outbox": [
+        {
+          "kind": "RESEARCH_AWARD",
+          "recipient": "0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f",
+          "wei": "200000000000000"
+        },
+        {
+          "kind": "UNALLOCATED_REFUND",
+          "recipient": "0xeb57bc7125fa60d7482ce12058397369ab3581f8",
+          "wei": "100000000000000"
+        }
+      ],
+      "policy": "specbasket/official-erc-matching-v2",
+      "policy_digest": "562c6201d35f9393c53d8c5d27013a439b060e3e75d1f0c8fe759cca57403264",
+      "received_wei": "300000000000000",
+      "requirements": [
+        "Represent fungible and non-fungible token types within one contract.",
+        "Retrieve royalty recipient and royalty amount for a given sale price.",
+        "Require every marketplace to pay royalties automatically."
+      ],
+      "revision": 7,
+      "reward_wei": "100000000000000",
+      "selected": [
+        "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary:0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f:erc-1155",
+        "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary:0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f:erc-2981"
+      ],
+      "source_commit": "f6d27455054efe82455fc021f2a3570441b88ea7",
+      "sponsor": "0xeb57bc7125fa60d7482ce12058397369ab3581f8",
+      "state": "TRANSFERS_EMITTED",
+      "title": "NFT standards research"
+    }
+  },
+  "native_balance": "0",
+  "balance_observation": {
+    "at": "2026-10-30T01:38:40.445Z",
+    "event": "recipient-balance-observed",
+    "basket": "0xeb57bc7125fa60d7482ce12058397369ab3581f8:core-primary",
+    "recipient": "0x2da5393d7BBb9A037dc3abB56DbbC5C150fc843f",
+    "before": "97887104000000001013",
+    "after": "97887304000000001013",
+    "delta": "200000000000000",
+    "native_balance": "0",
+    "limitation": "Balance delta alone does not bind a chain child transfer. Add authoritative parent-linked child receipt before claiming fully verified delivery."
+  }
+}

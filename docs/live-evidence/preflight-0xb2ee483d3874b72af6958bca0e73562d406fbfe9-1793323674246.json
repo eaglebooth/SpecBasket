@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-30T01:27:54.242Z",
+  "address": "0xb2ee483d3874b72aF6958BCa0E73562d406FbfE9",
+  "chain_id": 61999,
+  "source_sha256": "97af2093a0273c494ba0bebfb1a878bbacc616fbcddd5a8019959d73f6223dc1",
+  "deployed_sha256": "97af2093a0273c494ba0bebfb1a878bbacc616fbcddd5a8019959d73f6223dc1",
+  "version": {
+    "automatic_expiry": false,
+    "catalog": {
+      "20": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+      "721": "238787165c08ac748928ffad57a24045802174bb38220af9e7b63c44778b7372",
+      "1155": "beac04fc902314ec0d60000e3bcb73cb7080d586f6a718b6b35a6d68a8ac98b1",
+      "2981": "7f9c7d2ac9245fbcdbd1058eb69e41fa1e8bdf4873e06c71e97c977be40681c3"
+    },
+    "failed_deposit_recovery": "official_rpc_known_rollback_sender_bound_once_only",
+    "max_contributors": 3,
+    "max_requirements": 3,
+    "max_selected": 3,
+    "max_source_bytes": 65536,
+    "name": "SpecBasket",
+    "network": 61999,
+    "payment_semantics": "asynchronous_external_messages_not_confirmed_delivery",
+    "policy": "specbasket/official-erc-matching-v2",
+    "positive_rejection": "REJECTED_REFUND_EMITTED_not_publish_success",
+    "source_commit": "f6d27455054efe82455fc021f2a3570441b88ea7",
+    "version": "0.2.0"
+  }
+}
